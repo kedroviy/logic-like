@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "baseUrl": "./",
+    "target": "ES2015",
+    "downlevelIteration": true,
     "lib": [
       "dom",
       "dom.iterable",
@@ -18,7 +20,21 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "paths": {
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@pages/*": [
+        "./src/pages/*"
+      ],
+      "@redux/*": [
+        "./src/redux/*"
+      ],
+      "@feature/*": [
+        "./src/feature/*"
+      ],
+    },
   },
   "include": [
     "src"

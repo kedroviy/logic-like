@@ -1,0 +1,100 @@
+@import '../../fonts.scss';
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+
+    &__sidebar {
+        display: flex;
+        width: 260px;
+        padding: 12px;
+        flex-direction: column;
+        align-items: flex-start;
+        border-radius: 18px;
+        border: 1px solid #CFCFE4;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        flex-wrap: wrap;
+        height: 100%;
+        gap: 18px;
+    }
+
+    &__frame {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 0 0 calc(34% - 20px);
+        height: 162px;
+        margin-bottom: 30px;
+        align-self: stretch;
+        border-radius: 18px;
+        background: #FFF;
+    }
+}
+
+.sidebar_frame {
+    display: flex;
+    padding: 12px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+    border-radius: 12px;
+    border: none;
+    background-color: #FFF;
+}
+
+.frame_description {
+    display: flex;
+    padding: 12px 18px 18px 18px;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    background-color: #FFF;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    box-shadow: 0px 10px 13px -4px rgba(35, 35, 95, 0.19);
+}
+
+.frame_image {
+    max-width: 144px;
+    max-height: 144px;
+    flex-shrink: 0;
+}
+
+.frame {
+    display: flex;
+    padding: 12px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+    border-radius: 12px;
+}
+
+.selected {
+    @extend .sidebar_frame;
+    background: #5FBF77;
+}
+
+.text {
+    color: #39414B;
+    font-family: 'Nunito';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+}
+
+.text_selected {
+    @extend .text;
+    color: #FFF;
+    background-color: #5FBF77;
+}

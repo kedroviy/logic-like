@@ -1,0 +1,1 @@
+export { fetchMainPageContentAPI } from './mainPageService';
